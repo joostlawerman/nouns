@@ -1,6 +1,10 @@
 # Nouns
 A simple plugin to Pluralize and Singularize nouns.
 
+# Install
+```
+	go get github.com/joostlawerman/nouns
+```
 # Examples
 ```
 	plural, err := nouns.Pluralize("noun") // nouns
