@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/joostlawerman/nouns.svg?branch=master)](https://travis-ci.org/joostlawerman/nouns)
 # Nouns
 A simple plugin to Pluralize and Singularize nouns.
 
