@@ -277,9 +277,9 @@ func transform(old string, rules [][]string, irregularFrom, irregularTo int) (st
 			return old, nil
 		}
 		if strings.Contains(uncountable, "$") {
-			if match, errs := regexp.MatchString(uncountable, old); match {
-				if errs != nil {
-					return "", errs
+			if match, err := regexp.MatchString(uncountable, old); match {
+				if err != nil {
+					return "", err
 				}
 				return old, nil
 			}
@@ -290,15 +290,15 @@ func transform(old string, rules [][]string, irregularFrom, irregularTo int) (st
 	for _, rule := range rules {
 		regex, replace := rule[0], rule[1]
 
-		if match, errs := regexp.MatchString(regex, old); match {
-			if errs != nil {
-				return "", errs
+		if match, err := regexp.MatchString(regex, old); match {
+			if err != nil {
+				return "", err
 			}
 
-			regex, errs := regexp.Compile(regex)
+			regex, err := regexp.Compile(regex)
 
-			if errs != nil {
-				return "", errs
+			if err != nil {
+				return "", err
 			}
 			return regex.ReplaceAllString(old, replace), nil
 		}

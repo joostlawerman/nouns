@@ -56,6 +56,7 @@ var testCases = [][]string{
 	[]string{"automaton", "automata"},
 	[]string{"category", "categories"},
 	[]string{"test", "tests"},
+	[]string{"advice", "advice"},
 }
 
 func testTransform(t *testing.T, trans, expected int, transform func(string) (string, error)) {
