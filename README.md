@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/joostlawerman/nouns.svg?branch=master)](https://travis-ci.org/joostlawerman/nouns)
+[![Coverage Status](https://coveralls.io/repos/github/joostlawerman/nouns/badge.svg?branch=master)](https://coveralls.io/github/joostlawerman/nouns?branch=master)
 # Nouns
 A simple plugin to Pluralize and Singularize nouns.
 
